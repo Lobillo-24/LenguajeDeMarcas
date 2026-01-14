@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 3</title>
+</head>
+<body>
+
+<div draggable="true"
+     ondragstart="inicioDrag()"
+     ondragend="finDrag()"
+     style="width:120px;height:60px;background:#4caf50;color:white;
+            text-align:center;line-height:60px;cursor:grab;">
+  Arrástrame
+</div>
+
+<script>
+  function inicioDrag() {
+    console.log('El usuario empezó a arrastrar el elemento');
+  }
+
+  function finDrag() {
+    console.log('El usuario soltó el elemento');
+  }
+</script>
+
+</body>
+</html>

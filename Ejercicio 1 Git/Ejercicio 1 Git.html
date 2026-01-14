@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="CSS.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Git</title>
+</head>
+<body>
+
+    <dialog id="miDialogo">
+        <p>Este es un mensaje en una ventana de diálogo.</p>
+        <button id="cerrar">Cerrar</button>
+    </dialog>
+    
+    <button id="abrir">Abrir diálogo</button>
+
+</body>
+
+<script>
+    const dialogo = document.getElementById('miDialogo');
+    document.getElementById('abrir').onclick = () => dialogo.showModal();
+    document.getElementById('cerrar').onclick = () => dialogo.close();
+</script>
+    
+</body>
+</html>
